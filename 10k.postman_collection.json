@@ -1,0 +1,142 @@
+{
+	"variables": [],
+	"info": {
+		"name": "10K",
+		"_postman_id": "364764a1-1494-b523-6a06-2cd15c8b4e3c",
+		"description": "Testing the 10K API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "10K Production API",
+			"description": "",
+			"item": [
+				{
+					"name": "Get all Projects (Production)",
+					"request": {
+						"url": "https://api.10000ft.com/api/v1/projects?fields=custom_field_values&tags&per_page=200",
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "Example of getting all projects in production."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VNext (10K Testing Server)",
+			"description": "VNext (10K Testing Server)",
+			"item": [
+				{
+					"name": "Get all Projects",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/projects?fields=custom_field_values&tags&per_page=200",
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Users",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/users",
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Custom Field Update Example",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/projects/186577/custom_field_values/46814?value=eagle",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Project Example",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/projects/186577?fields=custom_field_values",
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Project Example",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/projects?name=Bug Project&description=A new Bug Project&client=Bug Client&project_state=Tentative",
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project Example",
+					"request": {
+						"url": "https://vnext.10000ft.com/api/v1/projects/186894",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth",
+								"value": "=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
